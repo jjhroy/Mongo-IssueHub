@@ -16,6 +16,7 @@
 
   onMounted(() => {
     vditorRef.value = new Vditor('vditor', {
+      placeholder: '',
       after: () => {
         vditorRef.value?.setValue('');
       },
